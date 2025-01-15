@@ -1,0 +1,143 @@
+/* Property style settings so repetitive colors can bechange in one place. */
+@property --light-bg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ced8f2;
+}
+@property --dark-bg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #4f4c4c;
+}
+@property --link-hover-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #850404;
+}
+@property --button-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #a5cfa3;
+}
+@property --footer-text-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ffffff;
+}
+@property --gradient-light-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ffffff;
+}
+/* Common default style settings. */
+* {
+    color: var(--dark-bg-color);
+    font-family: 'Garamond', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+}
+/* Style settings for links. */
+a:hover {
+    color: var(--link-hover-color);
+}
+/* Headings style settings. */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+/* Style settings for buttons. */
+button {
+    background-color: var(--dark-bg-color);
+    border: none;
+    border-radius: 25px;
+    color: var(--button-color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0.8;
+    transition: 0.3s;
+    padding: 2px 8px;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 1
+}
+/* Style settings for paragraph. */
+p {
+    font-size: 20px;
+}
+/* Container style settings. */
+.container{
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 5% auto 10%;
+    height: 100vh;
+    background-color: var(--light-bg-color);
+}
+/* Style settings for top menu of the website. */
+.top-meny{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: var(--light-bg-color);
+}
+
+.top-meny > ul > li {
+    display:inline-block;
+    margin-left: 5px;           /* To get distance between the elements in the menu. */
+    margin-right: 5px;          /* To get distance between the elements in the menu. */
+    position: relative;
+}
+
+.top-meny > ul {
+    text-align:center;
+}
+/* Style settings for left aside. */
+.left-aside{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: var(--light-bg-color);
+}
+/* Style settings for main. */
+.main{
+    display: flex;
+    justify-content: center;
+    grid-column: 2;
+    grid-row:2;
+    background-color: var(--light-bg-color);
+}
+/* Style settings for right aside. */
+.right-aside{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: var(--light-bg-color);
+}
+/* Style settings for footer. */
+.footer {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    grid-column: 1/4;
+    grid-row: 3;
+    background-color: var(--dark-bg-color);
+}
+.footer-text{
+    color: var(--footer-text-color);
+}
+/* */
+#main-grad {
+    height: auto;
+    background-color: var(--light-bg-color); /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--light-bg-color), var(--gradient-light-color), var(--light-bg-color));
+}
+#left-grad {
+    height: auto;
+    background-color: var(--my-bg-color); /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--light-bg-color), var(--gradient-light-color), var(--light-bg-color));
+}
+#right-grad {
+    height: auto;
+    background-color: var(--light-bg-color); /* For browsers that do not support gradients */
+    background-image: linear-gradient(var(--light-bg-color), var(--gradient-light-color), var(--light-bg-color));
+}
