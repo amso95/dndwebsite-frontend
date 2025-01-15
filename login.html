@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
         <link rel="stylesheet" type="text/css" href="styles/baseStyle.css"/>
-        <title>Home</title>
+        <title>Login</title>
     </head>
     <body>
         <div class="container">
@@ -16,11 +16,15 @@
             </div>
             <div class="left-aside"  id="left-grad"></div>
             <div class="main" id="main-grad">
-                <div class="post">
-                    <h1 class="post-title">Home page</h1>
-                    <p class="post-text">This is some text that will describe what happend the last session.</p>
-                    <p class="date-text">DD/MM/YYYY</p>
-                    <button>This is a button</button>
+                <div class="login">
+                    <form>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username"><br>
+                        <label for="password">Password</label><br>
+                        <!-- The password should have a checkbox or eye that you can choose if the text should be visible or just be dots.-->
+                        <input type="password" id="password" name="password">
+                        <button id="submit">Submit</button>
+                      </form>
                 </div>
             </div>
             <div class="right-aside" id="right-grad"></div>
