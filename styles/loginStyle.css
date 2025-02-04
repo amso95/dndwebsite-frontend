@@ -4,4 +4,22 @@
 
 #main-grad {
     align-self: center;
+    justify-content: center;
+}
+* {
+    color: #fff;
+    font-family: 'Garamond', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+}
+.login {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+body{
+    background-image: url('../images/desk_close.png');
+    background-repeat: no-repeat;
+    background-position: 40% 14%;
+    background-size: 75%;
+    background-color: #100700;
 }

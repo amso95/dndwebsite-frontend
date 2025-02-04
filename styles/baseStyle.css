@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Style settings for buttons. */
 button {
-    background-color: var(--dark-bg-color);
     border: none;
     border-radius: 25px;
     color: var(--button-color);
@@ -63,7 +62,6 @@ button:hover {
 }
 /*background image test*/
 .post {
-    background-image: url('../images/test.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -72,13 +70,13 @@ button:hover {
 p {
     font-size: 20px;
 }
+
 /* Container style settings. */
 .container{
     display: grid;
     grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 5% auto 10%;
     height: 100vh;
-    background-color: var(--light-bg-color);
 }
 /* Style settings for top menu of the website. */
 .top-meny{
@@ -87,7 +85,6 @@ p {
     justify-content: center;
     grid-column: 1/4;
     grid-row: 1;
-    background-color: var(--light-bg-color);
 }
 
 .top-meny > ul > li {
@@ -104,7 +101,6 @@ p {
 .left-aside{
     grid-column: 1;
     grid-row: 2;
-    background-color: var(--light-bg-color);
 }
 /* Style settings for main. */
 .main{
@@ -112,13 +108,11 @@ p {
     justify-content: center;
     grid-column: 2;
     grid-row:2;
-    background-color: var(--light-bg-color);
 }
 /* Style settings for right aside. */
 .right-aside{
     grid-column: 3;
     grid-row: 2;
-    background-color: var(--light-bg-color);
 }
 /* Style settings for footer. */
 .footer {
@@ -127,24 +121,7 @@ p {
     justify-content: center;
     grid-column: 1/4;
     grid-row: 3;
-    background-color: var(--dark-bg-color);
 }
 .footer-text{
     color: var(--footer-text-color);
-}
-/* */
-#main-grad {
-    height: auto;
-    background-color: var(--light-bg-color); /* For browsers that do not support gradients */
-    background-image: linear-gradient(var(--light-bg-color), var(--gradient-light-color), var(--light-bg-color));
-}
-#left-grad {
-    height: auto;
-    background-color: var(--my-bg-color); /* For browsers that do not support gradients */
-    background-image: linear-gradient(var(--light-bg-color), var(--gradient-light-color), var(--light-bg-color));
-}
-#right-grad {
-    height: auto;
-    background-color: var(--light-bg-color); /* For browsers that do not support gradients */
-    background-image: linear-gradient(var(--light-bg-color), var(--gradient-light-color), var(--light-bg-color));
 }
