@@ -1,3 +1,9 @@
+@keyframes login {
+    0%   {opacity: 0;}
+    50%  {opacity: 0.5;}
+    100% {opacity: 1;}
+  }
+
 #submit {
     align-self: right;
 }
@@ -22,4 +28,9 @@ body{
     background-position: 40% 14%;
     background-size: 75%;
     background-color: #100700;
+}
+
+.open_desk {
+    width: 85%;
+    animation: login 5s 1s 5;
 }
